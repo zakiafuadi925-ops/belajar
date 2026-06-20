@@ -1,0 +1,14 @@
+=== STRUK TOKO BAJU ===
+No Transaksi : 20260306013423
+Kasir        : admin
+Tanggal      : 06-03-2026 01:34:23
+
+Kaos Polos(S) x4 = Rp200.000
+Celana Jeans(L) x9 = Rp1.350.000
+Sweater(M) x4 = Rp560.000
+
+Subtotal : Rp2.110.000
+Diskon   : Rp211.000
+Total    : Rp1.899.000
+Bayar    : Rp2.000.000
+Kembali  : Rp101.000

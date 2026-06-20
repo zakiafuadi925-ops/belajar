@@ -1,0 +1,8 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 04:26:33
+nasi goreng kebuli x3 = Rp60.000
+nasi goreng spesial x4 = Rp80.000
+Total   : Rp133.000
+Bayar   : Rp150.000
+Kembali : Rp17.000

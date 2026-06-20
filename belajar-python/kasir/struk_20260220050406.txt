@@ -1,0 +1,9 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 05:04:06
+nasi goreng seafood x4 = Rp80.000
+nasi ayam bakar sambal ijo x8 = Rp160.000
+nasi ayam bakar sambal ijo x7 = Rp140.000
+Total   : Rp361.000
+Bayar   : Rp400.000
+Kembali : Rp39.000

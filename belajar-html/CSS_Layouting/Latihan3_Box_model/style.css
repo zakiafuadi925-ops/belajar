@@ -1,0 +1,55 @@
+.box {
+    color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    padding: 200px;
+    border: 5px solid black;
+}
+
+.box2 {
+    color: red;
+    margin: 200px;
+    padding: 200px;
+    border: 5px solid black;
+}
+
+.box3 {
+    color: green;
+    margin: 200px;
+    padding: 200px;
+    border: 5px solid black;
+}
+
+.box4 {
+    color: purple;
+    margin: 200px;
+    padding: 200px;
+    border: 5px solid black;
+}
+
+.box5 {
+    color: orange;
+    margin: 200px;
+    padding: 200px;
+    border: 5px solid black;
+}
+
+.satu {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+
+}
+
+.dua {
+    width: 200px;    height: 100px;
+    background-color: green;
+}
+
+.tiga {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+}

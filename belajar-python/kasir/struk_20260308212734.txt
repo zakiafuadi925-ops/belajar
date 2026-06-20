@@ -1,0 +1,14 @@
+=== STRUK BELANJA ===
+No Transaksi : 20260308212734
+Kasir        : nureh
+Tanggal      : 08-03-2026 21:27:34
+
+Nasi Goreng Kebuli x4 = Rp80.000
+Nasi Goreng Spesial x5 = Rp100.000
+
+Subtotal : Rp180.000
+Diskon   : Rp9.000
+PPN 10%  : Rp18.000
+Total    : Rp189.000
+Bayar    : Rp200.000
+Kembali  : Rp11.000

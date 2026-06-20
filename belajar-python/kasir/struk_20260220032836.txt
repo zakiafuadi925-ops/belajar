@@ -1,0 +1,10 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 03:28:36
+----------------------
+nasi goreng kebuli x4 = Rp80.000
+nasi ayam bakar sambal ijo x6 = Rp120.000
+----------------------
+Total   : Rp190.000
+Bayar   : Rp200.000
+Kembali : Rp10.000

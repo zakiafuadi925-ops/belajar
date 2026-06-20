@@ -1,0 +1,14 @@
+p {
+    color: red;
+}
+#p1 {
+    color: blue;
+}
+
+.Makanan li {
+    color: green;
+}
+
+.Makanan .sarapan {
+    color: orange;
+}

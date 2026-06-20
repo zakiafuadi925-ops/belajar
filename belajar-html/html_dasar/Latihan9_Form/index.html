@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Form</title>
+    </head>
+    <body>
+     <h1>Form Input Data</h1>
+        <form action="proses.php" method="post">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan"></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+        <br><b><br><br><br><br><br>
+
+        <form>
+            <h3>Masukkan username dan password</h3>
+            <label for="username">username : </label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">password : </label>
+            <input type="password" id="password">
+            <br>
+            <h3>Jenis Kelamin</h3>
+            <input type="radio"id="laki-laki" name="Jeniskelamin"><label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="wanita" name="Jeniskelamin"><label for="wanita">Wanita</label>
+            <br>
+            <h3>Apa hobi kamu?</h3>
+            <input type="checkbox" id="hobi1" name="hobi1"><label for="hobi1">Membaca</label>
+            <input type="checkbox" id="hobi2" name="hobi2"><label for="hobi2">Ngoding</label>
+            <input type="checkbox" id="hobi3" name="hobi3"><label for="hobi3">Olahraga</label> 
+              <br><br>
+            <textarea></textarea>
+              <br><br>   
+            <select>
+                <option>Bandung</option>
+                <option>Jakarta</option>
+                <option>Surabaya</option>
+                <option>Yogyakarta</option>
+            </select>        
+             <br><br>
+             
+            <button type="submit">Kirim Sekarang</button>
+        </form>
+
+
+    </body>
+</html>

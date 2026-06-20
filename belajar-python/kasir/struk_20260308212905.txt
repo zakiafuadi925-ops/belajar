@@ -1,0 +1,14 @@
+=== STRUK TOKO BAJU ===
+No Transaksi : 20260308212905
+Kasir        : admin
+Tanggal      : 08-03-2026 21:29:05
+
+Celana Jeans(S) x3 = Rp450.000
+Jaket Hoodie(S) x2 = Rp360.000
+Sweater(M) x3 = Rp420.000
+
+Subtotal : Rp1.230.000
+Diskon   : Rp123.000
+Total    : Rp1.107.000
+Bayar    : Rp1.500.000
+Kembali  : Rp393.000

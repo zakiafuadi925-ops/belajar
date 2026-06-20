@@ -1,0 +1,8 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 03:43:31
+nasi ayam bakar sambal ijo x5 = Rp100.000
+nasi ayam penyet spesial jumbo x6 = Rp150.000
+Total   : Rp237.500
+Bayar   : Rp300.000
+Kembali : Rp62.500

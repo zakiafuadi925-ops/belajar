@@ -1,0 +1,17 @@
+=== STRUK BELANJA ===
+No Transaksi : 20260306004902
+Kasir        : nureh
+Tanggal      : 06-03-2026 00:49:02
+
+Nasi Goreng Kebuli x3 = Rp60.000
+Nasi Goreng Spesial x4 = Rp80.000
+Nasi Ayam Bakar Sambal Ijo x5 = Rp100.000
+Jeruk Segar x5 = Rp35.000
+Lemon Tea x7 = Rp49.000
+
+Subtotal : Rp324.000
+Diskon   : Rp16.200
+PPN 10%  : Rp32.400
+Total    : Rp340.200
+Bayar    : Rp400.000
+Kembali  : Rp59.800

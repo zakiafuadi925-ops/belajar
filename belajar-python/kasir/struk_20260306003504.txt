@@ -1,0 +1,15 @@
+=== STRUK BELANJA ===
+No Transaksi : 20260306003504
+Kasir        : nureh
+Tanggal      : 06-03-2026 00:35:04
+
+Nasi Goreng Ayam x2 = Rp30.000
+Nasi Goreng Kebuli x3 = Rp60.000
+Nasi Goreng Kebuli x4 = Rp80.000
+
+Subtotal : Rp170.000
+Diskon   : Rp8.500
+PPN 10%  : Rp17.000
+Total    : Rp178.500
+Bayar    : Rp200.000
+Kembali  : Rp21.500

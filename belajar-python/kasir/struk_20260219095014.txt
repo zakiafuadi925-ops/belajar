@@ -1,0 +1,9 @@
+=== STRUK PEMBELIAN ===
+kasir   : nureh
+Tanggal : 19-02-202609:50:14
+---------------
+Total Belanja : Rp25000
+Diskon        : Rp0
+Total Bayar   : Rp25000
+Uang Dibayar  : Rp300000
+Kembalian     : Rp275000

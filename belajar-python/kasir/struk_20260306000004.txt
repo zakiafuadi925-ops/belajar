@@ -1,0 +1,14 @@
+=== STRUK BELANJA ===
+No Transaksi : 20260306000004
+Kasir        : nureh
+Tanggal      : 06-03-2026 00:00:04
+
+Nasi Goreng Seafood x2 = Rp40.000
+Nasi Goreng Ayam x1 = Rp15.000
+
+Subtotal : Rp55.000
+Diskon   : Rp0
+PPN 10%  : Rp5.500
+Total    : Rp60.500
+Bayar    : Rp70.000
+Kembali  : Rp9.500

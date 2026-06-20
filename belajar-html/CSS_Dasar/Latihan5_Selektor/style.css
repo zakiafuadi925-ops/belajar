@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1, h2 {
+    color: green;
+    text-align: center;
+
+}
+
+
+#p1 {
+    color: orangered;
+    
+}
+
+.p2 {
+    color: blue;
+}
+
+ul {
+    color: red;
+    
+}
+
+li {
+    color :red;
+}

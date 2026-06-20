@@ -1,0 +1,11 @@
+=== STRUK PEMBELIAN ===
+Tanggal: 2026-02-19 04:25:56.245251
+
+kentang x 15 = Rp150000
+kebab x 10 = Rp100000
+
+Total Belanja : Rp250000
+Diskon        : Rp37500
+Total Bayar   : Rp212500
+Uang Dibayar  : Rp300000
+Kembalian     : Rp87500

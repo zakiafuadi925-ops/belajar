@@ -1,0 +1,8 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 04:32:21
+nasi goreng seafood x4 = Rp80.000
+nasi goreng kebuli x3 = Rp60.000
+Total   : Rp133.000
+Bayar   : Rp135.000
+Kembali : Rp2.000

@@ -1,0 +1,12 @@
+=== STRUK BELANJA ===
+No Transaksi : 20260306004814
+Kasir        : nureh
+Tanggal      : 06-03-2026 00:48:14
+
+
+Subtotal : Rp0
+Diskon   : Rp0
+PPN 10%  : Rp0
+Total    : Rp0
+Bayar    : Rp1
+Kembali  : Rp1

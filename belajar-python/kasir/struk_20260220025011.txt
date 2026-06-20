@@ -1,0 +1,12 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 02:50:11
+----------------------
+nasi goreng kebuli x3 = Rp60.000
+teh manis x4 = Rp20.000
+nasi ayam penyet spesial jumbo x5 = Rp125.000
+lemon tea x7 = Rp49.000
+----------------------
+Total   : Rp241.300
+Bayar   : Rp700.000
+Kembali : Rp458.700

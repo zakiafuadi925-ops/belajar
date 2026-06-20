@@ -1,0 +1,42 @@
+
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(151, 9, 33)
+}
+
+.dua {
+    width: 100%;
+    background-color: aqua;
+    display: inline-block;
+}
+
+
+.overflow1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(151, 9, 33);
+    overflow: hidden;
+}
+
+.overflow2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(151, 9, 33);
+    overflow: scroll;
+}
+
+.overflow3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(151, 9, 33);
+    overflow: auto;
+}
+
+.overflow4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(151, 9, 33);
+    overflow: visible;
+}

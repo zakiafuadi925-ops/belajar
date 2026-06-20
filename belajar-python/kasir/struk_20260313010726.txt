@@ -1,0 +1,13 @@
+=== STRUK TOKO BAJU ===
+No Transaksi : 20260313010726
+Kasir        : admin
+Tanggal      : 13-03-2026 01:07:26
+
+Kemeja Pria(S) x4 = Rp480.000
+Sweater(M) x3 = Rp420.000
+
+Subtotal : Rp900.000
+Diskon   : Rp90.000
+Total    : Rp810.000
+Bayar    : Rp850.000
+Kembali  : Rp40.000

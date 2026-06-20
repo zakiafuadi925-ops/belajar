@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Form dalam Tabel</title>
+    <style>
+        /* Sedikit CSS agar tampilan tabel lebih rapi */
+        table {
+            border-spacing: 10px;
+        }
+        td {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Input Data (Layout Tabel)</h1>
+    
+    <form action="proses.php" method="post">
+        <table border="0">
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td>:</td>
+                <td><input type="text" id="username" name="username"></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" id="laki-laki" name="jk" value="L"> <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" id="wanita" name="jk" value="P"> <label for="wanita">Wanita</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobi</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" id="h1" name="hobi[]"> <label for="h1">Membaca</label><br>
+                    <input type="checkbox" id="h2" name="hobi[]"> <label for="h2">Ngoding</label><br>
+                    <input type="checkbox" id="h3" name="hobi[]"> <label for="h3">Trading</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kota Asal</td>
+                <td>:</td>
+                <td>
+                    <select name="kota">
+                        <option>Bandung</option>
+                        <option>Jakarta</option>
+                        <option>Surabaya</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pesan</td>
+                <td>:</td>
+                <td><textarea name="pesan" rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button type="submit">Kirim Sekarang</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

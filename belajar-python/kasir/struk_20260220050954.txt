@@ -1,0 +1,9 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 05:09:54
+nasi goreng spesial x4 = Rp80.000
+teh manis x4 = Rp20.000
+jeruk segar x3 = Rp21.000
+Total   : Rp114.950
+Bayar   : Rp120.000
+Kembali : Rp5.050

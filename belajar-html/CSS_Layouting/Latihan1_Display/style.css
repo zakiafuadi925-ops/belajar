@@ -1,0 +1,57 @@
+.container {
+    width: 400px;
+    height: 200px;
+    background-color: lightblue;
+    display: block;
+    margin-left: 50%;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    display: block;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    display: block;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    display: block;
+}
+
+.navigasi a {
+    height: 50px;
+    background-color: lightgray;
+    display: block
+}
+
+.main {
+    width: 100%;
+    height: 150px;
+    background-color: lightyellow;
+    display: inline-block
+}
+
+.main h1 {
+    text-align: center;
+    padding-top: 50px;
+    color: darkblue;
+}
+
+.main .p1 {
+    text-align: center;
+    color: darkred;
+}
+
+.main .p2 {
+    text-align: center;
+    color: darkgreen;
+}

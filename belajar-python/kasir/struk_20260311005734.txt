@@ -1,0 +1,15 @@
+=== STRUK TOKO BAJU ===
+No Transaksi : 20260311005734
+Kasir        : admin
+Tanggal      : 11-03-2026 00:57:34
+
+Kaos Polos(S) x4 = Rp200.000
+Kemeja Wanita(M) x3 = Rp330.000
+Sweater(XL) x5 = Rp700.000
+Celana Jeans(L) x5 = Rp750.000
+
+Subtotal : Rp1.980.000
+Diskon   : Rp198.000
+Total    : Rp1.782.000
+Bayar    : Rp2.000.000
+Kembali  : Rp218.000

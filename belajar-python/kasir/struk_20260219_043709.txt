@@ -1,0 +1,3 @@
+burger x 10 = Rp100000
+kebab x 15 = Rp150000
+teh x 20 = Rp100000

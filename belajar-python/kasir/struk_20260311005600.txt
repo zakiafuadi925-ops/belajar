@@ -1,0 +1,16 @@
+=== STRUK BELANJA ===
+No Transaksi : 20260311005600
+Kasir        : nureh
+Tanggal      : 11-03-2026 00:56:00
+
+Nasi Goreng Spesial x4 = Rp80.000
+Nasi Ayam Bakar Sambal Ijo x5 = Rp100.000
+Teh Manis x8 = Rp40.000
+Jeruk Segar x9 = Rp63.000
+
+Subtotal : Rp283.000
+Diskon   : Rp14.150
+PPN 10%  : Rp28.300
+Total    : Rp297.150
+Bayar    : Rp300.000
+Kembali  : Rp2.850

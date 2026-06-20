@@ -1,0 +1,8 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 05:20:36
+nasi goreng seafood x2 = Rp40.000
+nasi goreng seafood x2 = Rp40.000
+Total   : Rp88.000
+Bayar   : Rp100.000
+Kembali : Rp12.000

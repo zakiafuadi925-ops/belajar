@@ -1,0 +1,10 @@
+=== STRUK BELANJA ===
+Kasir   : nureh
+Tanggal : 20-02-2026 02:57:55
+----------------------
+nasi ayam penyet sambal terasi x3 = Rp60.000
+nasi ayam bakar sambal ijo x3 = Rp60.000
+----------------------
+Total   : Rp114.000
+Bayar   : Rp150.000
+Kembali : Rp36.000
