@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Transform</title>
+    <style>
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+      /* Transform
+      scale(angka), scaleX(angka), scaleY(angka) = untuk mengatur ukuran elemen
+      rotate(deg), rotateX(deg), rotateY(deg), rotateZ(deg) = untuk mengatur rotasi elemen
+      skew(deg), skewX(deg), skewY(deg) = untuk mengatur kemiringan elemen
+      translate(px, px), translateX(px), translateY(px) = untuk mengatur posisi elemen
+      */
+      .kotak {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin: 50px auto 0;
+        transition: 1s;
+      }
+      .kotak:hover {
+        transform: scale(3) rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In, totam
+      voluptatem aliquid nostrum, autem fuga odio similique expedita labore
+      laboriosam beatae quasi esse minus fugit earum tenetur incidunt amet
+      exercitationem?
+    </p>
+  </body>
+</html>
