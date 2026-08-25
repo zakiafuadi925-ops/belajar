@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Coba Position</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      .satu {
+        background-color: lightgreen;
+      }
+      .dua {
+        background-color: violet;
+        position: relative;
+        top: 30px;
+        left: 30px;
+      }
+      .tiga {
+        background-color: gold;
+      }
+      .empat {
+        background-color: salmon;
+      }
+      .lima {
+        background-color: aliceblue;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+      .enam {
+        background-color: lightcoral;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 50px;
+      }
+      .container {
+        width: 600px;
+        height: 650px;
+        border: 10px solid green;
+        margin: 0 auto;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu"></div>
+    <div class="dua">
+      <h1>Position: Relative;</h1>
+    </div>
+    <div class="tiga"></div>
+    <br /><br /><br />
+
+    <div class="container">
+      <div class="empat"></div>
+      <div class="lima"><h1>Position: Absolute;</h1></div>
+    </div>
+    <div class="enam"><h1>Position: Fixed;</h1></div>
+  </body>
+</html>

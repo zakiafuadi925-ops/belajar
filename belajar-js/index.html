@@ -1,14 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Belajar JavaScript</title>
-</head>
-<body>
+  <head>
+    <title>Belajar JavaScript</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        background-color: seashell;
+      }
+      header {
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: aquamarine;
+        text-decoration: underline;
+        text-shadow: 2px 2px 4px #000000;
+      }
+      .container {
+        margin-top: 20px;
+        background-color: azure;
+        padding: 20px;
+        height: 600px;
+        width: 800px;
+        position: center;
+        border-radius: 10px;
+      }
+      footer {
+        margin-top: 20px;
+        background-color: hsl(0, 7%, 62%);
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dasar-Dasar Javascript</h1>
+    </header>
+    <div class="container">
+      <h2>Belajar JavaScript di Kali linux</h2>
+      <button onclick="halo()">Klik Saya</button>
+    </div>
+    <footer>
+      <p>Copyright @ 2026 Belajar JavaScript</p>
+    </footer>
 
-  <h1>Belajar JavaScript di Kali linux</h1>
-  <button onclick="halo()">Klik Saya</button>
-
-  <script> src="script.js"></script>
-</body>
+    <script src="script.js">
+      function halo() {
+        let halo = "Halo selamat belajar Javascript!";
+        return alert(halo);
+      }
+    </script>
+  </body>
 </html>
-
