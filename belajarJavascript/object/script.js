@@ -40,5 +40,31 @@ function Shinobi(nama, nomorId, jurusan, elemen) {
   this.jurusan = jurusan;
   this.elemen = elemen;
 }
-
+// wajib menggunakan new
 var ninja = new Shinobi("fufufafa", "000003", "Plenger", "kaskus");
+
+// Belajar menggunakan this
+// konsep this
+
+// cara 1 - function declaration
+function halo1() {
+  console.log("halo1");
+}
+halo1();
+
+// cara 2 - object literal
+var obj = { a: 10, nama: "Bobob" };
+obj.halo2 = function () {
+  console.log("halo2");
+};
+obj.halo2();
+// this mengembalikan object yang bersangkutan
+
+// cara 3 - constructur
+function Halo3() {
+  console.log(this);
+  console.log("halo3");
+}
+new Halo3();
+var obj1 = new Halo3();
+// this mengembalikan object yang baru dibuat
