@@ -18,5 +18,5 @@ async function getUserData(userId) {
   }
 }
 
-let userBaru = await getUserData(12223);
-console.log(userBaru);
+// let userBaru = await getUserData(12223);
+// console.log(userBaru);

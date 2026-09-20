@@ -6,10 +6,10 @@
 // const li2 = document.querySelector("section#b ul li:nth-child(2)");
 // li2.style.backgroundColor = "orange";
 
-// // const p = document.querySelector("p");
-// // p.innerHTML = "Ini diubah melalui javascript";
+/// const p = document.querySelector("p");
+// p.innerHTML = "Ini diubah melalui javascript";
 
-// // document.querySelectorAll()
+// document.querySelectorAll()
 // const p = document.querySelectorAll("p");
 // for (let i = 0; i < p.length; i++) {
 //   p[i].style.backgroundColor = "lightblue";
