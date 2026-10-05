@@ -1,22 +1,16 @@
-function findMissingLetter(array) {
-  // Lakukan perulangan dari indeks pertama sampai sebelum
-  for (let i = 0; i < array.length - 1; i++) {
-    // ambil kode ascii dari huruf saat ini
-    let kodeSaatIni = array[i].charCodeAt(0);
-    // ambil kode ascii dari huruf berikutnya
-    let kodeBerikutnya = array[i + 1].charCodeAt(0);
+const { assert } = require("chai");
 
-    // periksa apakah kode ascii huruf berikutnya > kode ascii huruf saat ini
-    if (kodeBerikutnya - kodeSaatIni > 1) {
-      // jika ya artinya ada urutan yang loncat atau hilang: maka huruf yang hilang adalah huruf yang nilai asciinya = (koded ascii huruf saat ini + 1).
-      return String.fromCharCode(kodeSaatIni + 1);
-      // ubah kode ascii tersebut kembali menjadi karakter/huruf (misal: String.fromCharCode).
-    }
-  }
+describe("Tests", () => {
+  it("test", () => {
+    assert.strictEqual(addExtra([1, 2, 3]).length, 4);
+    assert.strictEqual(addExtra([1, 2]).length, 3);
+    assert.strictEqual(addExtra([]).length, 1);
 
-  // kembalikan huruf tersebut dan hentikan fungsinya
-  return " ";
-}
-
-let kode = findMissingLetter(["a", "b", "d", "e"]);
-console.log(kode);
+    let arr = [1, 2, 3];
+    assert.notStrictEqual(
+      addExtra(arr),
+      arr,
+      "Description: ...You have to create a new list...",
+    );
+  });
+});

@@ -41,3 +41,10 @@ const team = {
 const { pm, ...myTeam } = team;
 console.log(pm);
 console.log(myTeam);
+
+// filter
+function filterBy(type, ...values) {
+  return values.filter((v) => typeof v === type);
+}
+
+console.log(filterBy("number", 1, 2, "Sandhika", false, 10, true, "Doddy"));
