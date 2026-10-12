@@ -1,0 +1,23 @@
+[
+  {
+    "nama": "Sandhika Galih",
+    "nrp": "0403040023",
+    "email": "sandhikagalih@unpas.ac.id",
+    "jurusan": "Tehnik Informatika",
+    "idDosenWali": "1"
+  },
+  {
+    "nama": "Doddy Ferdiansyah",
+    "nrp": "133040123",
+    "email": "doddy@gmail.com",
+    "jurusan": "Tehnik Informatika",
+    "idDosenWali": "2"
+  },
+  {
+    "nama": "Erik",
+    "nrp": "104040001",
+    "email": "erik@gmail.com",
+    "jurusan": "Tehnik Industri",
+    "idDosenWali": "3"
+  }
+]
