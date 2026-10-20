@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "OMDb API Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Search Movie",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://www.omdbapi.com/?i=tt3896198&apikey=5ff9693b",
+          "protocol": "https",
+          "host": ["www", "omdbapi", "com"],
+          "query": [
+            { "key": "i", "value": "tt3896198" },
+            { "key": "apikey", "value": "5ff9693b" }
+          ]
+        }
+      }
+    }
+  ]
+}
