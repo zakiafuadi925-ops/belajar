@@ -1,0 +1,195 @@
+/* colors: {
+        zack: {
+          darkBg: '#0b0f19',      // Warna latar belakang utama (gelap pekat)
+          cardBg: '#111827',      // Warna latar belakang kartu/kontainer
+          border: '#1f2937',      // Warna garis pembatas (border) yang tipis
+          accentGreen: '#10b981', // Warna hijau aksen (badge & indikator)
+          accentPurple: '#8b5cf6',// Warna ungu aksen (ikon & highlight)
+          textMain: '#f3f4f6',    // Warna teks utama (putih pudar/terang)
+          textMuted: '#9ca3af',   // Warna teks sekunder/deskripsi (abu-abu)
+        }
+      } */
+:root {
+  /* Latar Belakang & Permukaan */
+  --bg-main: #0a0a12; /* Hitam/biru gelap pekat malam hari */
+  --bg-surface: #121226; /* Warna kartu, navbar, atau section */
+  --bg-input: #1a1a3a; /* Warna latar kotak input */
+
+  /* Warna Neon Utama (Branding) */
+  --neon-cyan: #00f0ff; /* Warna utama elektrik (biru muda neon) */
+  --neon-pink: #ff00e5; /* Warna aksen mencolok (pink neon) */
+  --neon-purple: #9d00ff; /* Warna sekunder/gradasi (ungu neon) */
+  --neon-yellow: #fcee0a; /* Warna sorotan alternatif (kuning cyberpunk) */
+  --cyber-purple: #711c91; /* Ungu gelap untuk aksen tambahan */
+  --purple-night: #133e7c /* Warna Teks */ --text-main: #f0f0f5; /* Putih keperakan terang */
+  --text-muted: #787899; /* Abu-abu kebiruan untuk teks sekunder */
+  --text-dark: #05050a; /* Hitam kontras untuk teks di atas background kuning/cyan */
+
+  /* Warna Status (Tema Cyberpunk) */
+  --success: #39ff14; /* Hijau fosfor */
+  --warning: #ffaa00; /* Jingga/oranye radioaktif */
+  --error: #ff003c; /* Merah laser */
+  --dark-bg: #0b0f19;
+  --card-bg: #111827;
+  --border: #1f2937;
+  --accent-green: #10b981;
+  --accent-purple: #8b5cf6;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+/* Latihan Satu */
+.container-satu {
+  width: 800px;
+  margin: 50px auto;
+  background-color: var(--bg-surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+.kolom-utama {
+  flex: 3;
+  order: 2;
+}
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan Dua */
+.container-dua {
+  background-color: var(--bg-surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 50px auto;
+}
+.layanan {
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.layanan.satu {
+  background-color: var(--neon-cyan);
+}
+.layanan.dua {
+  background-color: var(--neon-pink);
+}
+.layanan.tiga {
+  background-color: var(--neon-purple);
+}
+/* Latihan Tiga */
+.container-tiga {
+  background-color: var(--bg-surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Jarak antar thumbnail biar rapi */
+  justify-content: space-evenly; /* Membuat thumbnail tersebar merata */
+}
+
+.thumbnail {
+  border: 2px solid var(--bg-input); /* Opsional: Tambahkan border neon */
+  width: 50%; /* Atur lebar kotak sesuai selera */
+  height: 150px; /* Atur tinggi kotak sesuai selera */
+  /* overflow: hidden; Sembunyikan bagian gambar yang keluar kotak */
+}
+
+.thumbnail img {
+  border: 2px solid var(--neon-pink); /* Opsional: Tambahkan border neon */
+  border-radius: 8px; /* Opsional: Membuat sudut gambar lebih halus */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* KUNCI UTAMA: Gambar memenuhi area tanpa merusak rasio asli */
+}
+/* Latihan 4 */
+.container-empat {
+  background-color: var(--bg-surface);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Jarak antar thumbnail biar rapi */
+}
+.card {
+  border: 1px solid var(--bg-input); /* Opsional: Tambahkan border neon */
+  border-radius: 10px;
+  background-color: var(--bg-input);
+  overflow: hidden; /* Sembunyikan bagian gambar yang keluar kotak */
+  margin: 10px;
+  flex: 1;
+}
+.card .header {
+  height: 150px;
+  background-color: var(--neon-cyan);
+  border: 1px solid var(--neon-pink);
+  border-radius: 10px;
+}
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.card.besar {
+  transform: scale(1.12);
+}
+/* Latihan 5 */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  background-color: var(--bg-surface);
+  border: 5px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+}
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: var(--neon-cyan);
+  border: 2px solid var(--neon-pink);
+  border-radius: 8px;
+  color: var(--text-main);
+  text-align: center;
+  /* line-height: 100px; */
+  margin: auto;
+  display: flex;
+}
+.kotak span {
+  margin: auto;
+}
+/* responsive */
+@media (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layanan {
+    width: 30%;
+  }
+  .thumbnail {
+    width: 25%;
+  }
+}
