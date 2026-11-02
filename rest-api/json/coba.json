@@ -1,0 +1,26 @@
+[
+  {
+    "nama": "Sandhika",
+    "umur": 32,
+    "nrp": "0403040023",
+    "lulus": true,
+    "hobby": ["coding", "gaming"],
+    "alamat": {
+      "jalan": "Jl. Raya",
+      "kota": "Bandung",
+      "provinsi": "Jawa Barat"
+    }
+  },
+  {
+    "nama": "Budi",
+    "umur": 28,
+    "nrp": "0403040024",
+    "lulus": false,
+    "hobby": ["membaca", "berenang"],
+    "alamat": {
+      "jalan": "Jl. Merdeka",
+      "kota": "Jakarta",
+      "provinsi": "DKI Jakarta"
+    }
+  }
+]
