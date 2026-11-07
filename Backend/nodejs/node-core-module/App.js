@@ -1,103 +1,56 @@
-// Core Module
-// File System
-const fs = require("fs");
+const yargs = require("yargs");
+const { simpanContact } = require("./contacts");
+// mengambil argument dari command line
+// console.log(yargs.argv);
+// yargs.command(
+//   "add",
+//   "Menambahkan contact baru",
+//   () => {},
+//   (argv) => console.log(argv.nama),
+// );
 
-// Menuliskan string ke file secara synchronous
-
-// try {
-//   fs.writeFileSync("data/test.txt", "Hello World secara synchronous");
-// } catch (err) {
-//   console.log(err);
-// }
-
-// Menuliskan string ke file secara asynchronous
-
-// fs.writeFile("data/test.txt", "Hello World secara asynchronous", (err) => {
-//   console.log(err);
-// });
-
-// Membaca isi file secara synchronous
-
-// const data = fs.readFileSync("data/test.txt", "utf8");
-// console.log(data);
-
-// Membaca isi file secara asynchronous
-
-// fs.readFile("data/test.txt", "utf8", (err, data) => {
-//   if (err) {
-//     throw err;
-//   } else {
-//     console.log(data);
-//   }
-// });
-
-// Readline
-
-const readline = require("readline");
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
+yargs.command({
+  command: "add",
+  describe: "Menambahkan contact baru",
+  builder: {
+    nama: {
+      describe: "Nama lengkap",
+      demandOption: true,
+      type: "string",
+    },
+    email: {
+      describe: "Email",
+      demandOption: false,
+      type: "string",
+    },
+    noHP: {
+      describe: "Nomor Handphone",
+      demandOption: true,
+      type: "string",
+    },
+  },
+  handler(argv) {
+    simpanContact(argv.nama, argv.email, argv.noHP);
+    // const contact = {
+    //   nama: argv.nama,
+    //   email: argv.email,
+    //   noHP: argv.noHP,
+    // };
+    // console.log(contact);
+  },
 });
 
-// Membuatt folder data jika belum ada
-const dirPath = "./data";
-if (!fs.existsSync(dirPath)) {
-  fs.mkdirSync(dirPath);
-}
+yargs.parse();
+// const contacts = require("./contacts");
+// // object destructuring
+// const { tulisPertanyaan, simpanContact } = require("./contacts");
 
-// membuat file contacs.json jika belum ada
-const dataPath = "./data/contacts.json";
-if (!fs.existsSync(dataPath)) {
-  fs.writeFileSync(dataPath, "[]", "utf8");
-}
+// const main = async () => {
+//   const nama = await tulisPertanyaan("Masukkan nama anda: ");
+//   const email = await tulisPertanyaan("Masukkan email anda: ");
+//   const noHP = await tulisPertanyaan("Masukkan noHP anda: ");
 
-// rl.question("Masukkan nama anda : ", (nama) => {
-//   rl.question("Masukkan no HP anda: ", (noHP) => {
-//     // rl.question("Masukkan email anda: ");
-//     // console.log(`Terimakasih ${nama}, sudah menginputkan ${noHP}`);
-//     const contact = { nama, noHP };
-//     const file = fs.readFileSync("data/contacs.json", "utf8");
-//     const contacts = JSON.parse(file);
-
-//     contacts.push(contact);
-//     fs.writeFileSync("data/contacs.json", JSON.stringify(contacts));
-
-//     console.log("Terimakasoh sudah memasukkan data");
-//     rl.close();
-//   });
-// });
-
-const tulisPertanyaan = (pertanyaan) => {
-  return new Promise((resolve, reject) => {
-    rl.question(pertanyaan, (nama) => {
-      resolve(nama);
-    });
-  });
-};
-
-// const pertanyaan2 = () => {
-//   return new Promise((resolve, reject) => {
-//     rl.question("Masukkan noHP anda: ", (noHP) => {
-//       resolve(noHP);
-//     });
-//   });
+//   simpanContact(nama, email, noHP);
 // };
 
-const main = async () => {
-  const nama = await tulisPertanyaan("Masukkan nama anda: ");
-  const email = await tulisPertanyaan("Masukkan email anda: ");
-  const noHP = await tulisPertanyaan("Masukkan noHP anda: ");
-
-  const contact = { nama, email, noHP };
-  const fileBuffer = fs.readFileSync("data/contacts.json", "utf8");
-  const contacts = JSON.parse(fileBuffer);
-
-  contacts.push(contact);
-
-  fs.writeFileSync("data/contacts.json", JSON.stringify(contacts));
-
-  console.log("Terimakasih sudah memasukkan data.");
-  rl.close();
-};
-
-main();
+// main();
