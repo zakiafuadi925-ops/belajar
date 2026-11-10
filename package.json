@@ -1,0 +1,21 @@
+{
+  "name": "belajar",
+  "version": "1.0.0",
+  "description": "> Kumpulan modul pembelajaran dasar, catatan kode, serta proyek-proyek kecil eksplorasi *web development* (HTML5, CSS3, JavaScript, dan eksperimen lainnya).",
+  "homepage": "https://github.com/zakiafuadi925-ops/belajar#readme",
+  "bugs": {
+    "url": "https://github.com/zakiafuadi925-ops/belajar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakiafuadi925-ops/belajar.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
