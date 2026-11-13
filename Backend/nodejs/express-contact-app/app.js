@@ -60,6 +60,21 @@ app.get("/contact", (req, res) => {
   });
 });
 
+// halaman form tambah data contact
+app.get("/contact/add", (req, res) => {
+  res.render("add-contact", {
+    title: "Form tambah Data Contact",
+    layout: "layouts/main-layout",
+  });
+});
+
+// proses data contact
+app.post("/contact", (req, res) => {
+  console.log(req.body);
+  res.send("data berhasil dikirim!");
+});
+
+// halaman detail contact
 app.get("/contact/:nama", (req, res) => {
   const contact = findContact(req.params.nama);
 
