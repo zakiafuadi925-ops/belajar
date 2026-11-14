@@ -28,6 +28,18 @@ const findContact = (nama) => {
   return contact;
 };
 
+// menuliskan / menimpa file contacts.json dengan data yang baru
+const saveContacts = (contacts) => {
+  fs.writeFileSync("data/contacts.json", JSON.stringify(contacts));
+};
+
+// menambahkan data contact baru
+const addContact = (contact) => {
+  const contacts = loadContact();
+  contacts.push(contact);
+  saveContacts(contacts);
+};
+
 // const simpanContact = (nama, email, noHP) => {
 //   const contact = { nama, email, noHP };
 //   const contacts = loadContact();
@@ -105,4 +117,4 @@ const findContact = (nama) => {
 //   );
 // };
 
-module.exports = { loadContact, findContact };
+module.exports = { loadContact, findContact, addContact };
