@@ -1,6 +1,15 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
-const { loadContact, findContact, addContact } = require("./utils/contacts");
+const {
+  loadContact,
+  findContact,
+  addContact,
+  cekDuplikat,
+} = require("./utils/contacts");
+const { body, validationResult, check } = require("express-validator");
+const session = require("express-session");
+const cookiParser = require("cookie-parser");
+const flash = require("connect-flash");
 
 const app = express();
 const port = 3003;
@@ -16,11 +25,17 @@ app.use(express.static("public"));
 
 app.use(express.urlencoded());
 
-// application level middleware
-app.use((req, res, next) => {
-  console.log("Time: ", Date.now());
-  next();
-});
+// konfigurasi flash
+app.use(cookiParser("secret"));
+app.use(
+  session({
+    cookie: { maxAge: 6000 },
+    secret: "secret",
+    resave: true,
+    saveUninitialized: true,
+  }),
+);
+app.use(flash());
 
 app.get("/", (req, res) => {
   // res.sendFile("./index.html", { root: __dirname });
@@ -59,6 +74,7 @@ app.get("/contact", (req, res) => {
     layout: "layouts/main-layout",
     title: "Halaman Contact",
     contacts,
+    msg: req.flash("msg"),
   });
 });
 
@@ -71,10 +87,36 @@ app.get("/contact/add", (req, res) => {
 });
 
 // proses data contact
-app.post("/contact", (req, res) => {
-  addContact(req.body);
-  res.redirect("/contact");
-});
+app.post(
+  "/contact",
+  [
+    body("nama").custom((value) => {
+      const duplikat = cekDuplikat(value);
+      if (duplikat) {
+        throw new Error("Nama kontak sudah digunakan!");
+      }
+      return true;
+    }),
+    check("email", "Email tidak valid!").isEmail(),
+    check("nohp", "No HP tidak valid!").isMobilePhone("id-ID"),
+  ],
+  (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      // return res.status(400).json({ erros: errors.array() });
+      res.render("add-contact", {
+        title: "Form Tambah Data Contact",
+        layout: "layouts/main-layout",
+        errors: errors.array(),
+      });
+    } else {
+      addContact(req.body);
+      // kirimkan flash message
+      req.flash("msg", "Data contact berhasil ditambahkan!");
+      res.redirect("/contact");
+    }
+  },
+);
 
 // halaman detail contact
 app.get("/contact/:nama", (req, res) => {
