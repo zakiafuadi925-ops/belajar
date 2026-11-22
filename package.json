@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "mongodb": "^7.9.1",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "pnpm": "^12.21.0"
   }
 }
