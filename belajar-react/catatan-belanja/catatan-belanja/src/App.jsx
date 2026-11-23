@@ -48,7 +48,7 @@ function Form() {
   ));
 
   function handleSubmit(e) {
-    e.preventDefault();
+    e.preventDefault(); // membatalkan funsi bawaan browser
 
     if (!name.trim()) return;
 
